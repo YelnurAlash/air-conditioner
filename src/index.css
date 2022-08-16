@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 400px;
+  width: 300px;
+  background-color: #2b5870;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.temperature-container {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temperature {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px #fff solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px;
+  transition: background-color 0.3s;
+}
+
+.temperature-buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.temperature-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.temperature-btn:hover {
+  cursor: pointer;
+  background-color: rgb(184, 184, 184);
+}
+
+.temperature-btn:active {
+  border: 0;
+}
+
+.power-btn {
+  margin-top: 25px;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  font-size: 20px;
+  transform: scale(1);
+  transition: all 0.1s ease-in-out;
+}
+
+.power-btn-on {
+  background-color: green;
+}
+
+.power-btn-off {
+  background-color: red;
+}
+
+.power-btn:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.power-btn:active {
+  transform: scale(1.05);
+}
+
+.normal {
+  background-color: #035aa6;
+}
+
+.hot {
+  background-color: #ff5200;
+}
